@@ -9,7 +9,18 @@
 </head>
 <body>
     <div id="app">
-
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="text-center">Lista di cose da fare</h1>
+                </div>
+                <div class="col-12">
+                    <ul>
+                        <li v-for="(todo, index) in todo_list" :key="index" :class="todo.done ? 'text-decoration-line-through' : ''">{{todo.text}}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
     <script src='https://unpkg.com/vue@3/dist/vue.global.js'></script>
     <script src="./js/script.js"></script>
