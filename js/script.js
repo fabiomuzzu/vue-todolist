@@ -30,7 +30,7 @@ createApp({
 },
 methods: {
     removeTodo(index){
-        this.todo_list.splice(i,1);
+        this.todo_list.splice(index,1);
     }
 },
 }).mount('#app')
